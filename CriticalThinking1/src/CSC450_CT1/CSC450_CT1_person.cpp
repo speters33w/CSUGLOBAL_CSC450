@@ -31,12 +31,14 @@ int CSC450_CT1_person() {
     uniform_int_distribution<mt19937::result_type> dist(0, 2); // distribution in range [0, 2]
 
     // Snarky responses
-    string first_name_response = {"Your parents had the last laugh."};
-    string last_name_response[] = {"How embarrassing for you.", "A well-known criminal family.",
+    const string first_name_response = {"Your parents had the last laugh."};
+    const string last_name_response[] = {"How embarrassing for you.", "A well-known criminal family.",
                                    "One of a long line of losers."};
-    string street_address_response[] = {"Due to be condemned.", "The bad part of town.",
+    const string street_address_response[] = {"Due to be condemned.", "The bad part of town.",
                                         "Next to the dump."};
-    string city_response[] = {"What a dump.", "What a pit.", "You'd better move again."};
+    const string city_response[] = {"What a dump.", "What a pit.", "You'd better move again."};
+
+
 
     // Get information from user.
     cout << "First name: ";
