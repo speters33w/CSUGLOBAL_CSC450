@@ -24,7 +24,7 @@ int CSC450_CT1_mod1_2() {
     cout << "I have corrected all errors for this program." << endl;
 
     cout << "The total amount of money available is ";
-    cout << setprecision(2) << fixed << myMoney << endl;
+    cout << setprecision(2) << fixed << "$" << myMoney << endl;
 
     // Wait For Output Screen
     getch();
