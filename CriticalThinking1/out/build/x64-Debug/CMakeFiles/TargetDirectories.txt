@@ -1,0 +1,3 @@
+C:/OneDrive/GCC/CSC450/CriticalThinking1/out/build/x64-Debug/CMakeFiles/CriticalThinking1.dir
+C:/OneDrive/GCC/CSC450/CriticalThinking1/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/OneDrive/GCC/CSC450/CriticalThinking1/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

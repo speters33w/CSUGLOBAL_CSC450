@@ -1,0 +1,10 @@
+//
+// Created by StephanPeters on 2/12/2024.
+//
+
+#ifndef CRITICAL_THINKING_1_CRITICAL_THINKING_1_H
+#define CRITICAL_THINKING_1_CRITICAL_THINKING_1_H
+int CSC450_CT1_person();
+int CSC450_CT1_mod1_1();
+int CSC450_CT1_mod1_2();
+#endif //CRITICAL_THINKING_1_CRITICAL_THINKING_1_H
