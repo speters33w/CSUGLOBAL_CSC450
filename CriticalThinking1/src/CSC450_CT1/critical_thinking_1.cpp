@@ -12,10 +12,10 @@ int main() {
     cout << "Running CSC450_CT1_person:" << endl;
     CSC450_CT1_person();
     cout << endl;
-    cout << "Running CSC450_CT1_mod1_1:" << endl;
-    CSC450_CT1_mod1_1();
-    cout << endl;
-    cout <<  "Running CSC450_CT1_mod1_2:" << endl;
-    CSC450_CT1_mod1_2();
+//    cout << "Running CSC450_CT1_mod1_1:" << endl;
+//    CSC450_CT1_mod1_1();
+//    cout << endl;
+//    cout <<  "Running CSC450_CT1_mod1_2:" << endl;
+//    CSC450_CT1_mod1_2();
     return 0;
 }

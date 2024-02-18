@@ -11,7 +11,7 @@
 #include <iostream>
 #include <random>
 #include <string>
-#include <conio.h>
+// #include <conio.h>
 
 // Standard namespace declaration
 using namespace std;
@@ -62,13 +62,13 @@ int CSC450_CT1_person() {
     cout << endl << endl;
 
     // Print information to screen
-    cout << first_name << last_name << endl;
+    cout << first_name << " " << last_name << endl;
     cout << street_address << endl;
     cout << city << ", " << zip << endl << endl;
 
     cout << "Welcome to Bureaucracy" << endl << "A Paranoid Fantasy" << endl;
 
-    getch();
+    getchar();
 
     return 0;
 }

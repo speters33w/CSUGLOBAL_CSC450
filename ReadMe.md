@@ -1,6 +1,6 @@
-# CSU Global CSC450 Programming III (C++, Java) 23WD
+# CSU Global CSC450 Programming III (Secure Programming in C++ and Java) 23WD
 
-This repository contains my solutions while taking CSC450 Programming III (C++,  advanced Java) from Colorado State University, Global Campus.
+This repository contains my solutions while taking CSC450 Programming III (Secure Programming in C++ and Java) from Colorado State University, Global Campus.
 
 ## Critical Thinking Assignments
 

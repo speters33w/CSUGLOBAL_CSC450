@@ -4,7 +4,7 @@
  */
 
 #include <iostream>
-#include <conio.h>
+//#include <conio.h>
 
 // Standard namespace declaration
 using namespace std;
@@ -19,7 +19,7 @@ int CSC450_CT1_mod1_1() {
     cout << "I have corrected all errors for this program." << endl;
 
     // Wait For Output Screen
-    getch();
+    getchar();
 
     // Function return Statement
     return 0;
