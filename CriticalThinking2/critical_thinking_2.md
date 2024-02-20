@@ -24,10 +24,10 @@ For your Module 2 Critical Thinking assignment you are to write a C++ program th
 
 **1) Put your C++ source code in [.cpp text files](./CSC450_CT2_string.cpp). Note that I execute all your programs to check them out.**
 
-**2) In a Word or PDF "documentation" file, labeled as such,** **put a copy of your C++ source code and execution output screen snapshots.**
+**2) In a Word or PDF "[documentation](./doc/Critical_Thinking_2_String_Input_Console_Application.pdf)" file, labeled as such,** **put a copy of your C++ source code and execution output screen snapshots.**
 
 **3) Include a [screenshot](./img/GitHub_Repository2.png) showing that you've stored your C++ source code in a GitHub repository.**
 
-**4) Put all your files into a single** **.zip file, and submit ONLY that .zip file for grading.**
+**4) Put all your files into a single** **[.zip file](./zip/CriticalThinking2.zip), and submit ONLY that .zip file for grading.**
 
 Edited by Reginald Haseltine on Feb 19 at 6:16pm
