@@ -6,3 +6,5 @@ This repository contains my solutions while taking CSC450 Programming III (Secur
 
 [Critical Thinking 1](./CriticalThinking1/critical_thinking_1.md) Console Application and Syntax Corrections
 
+[Critical Thinking 2](./CriticalThinking2/critical_thinking_2.md) Console Application and Syntax Corrections
+
