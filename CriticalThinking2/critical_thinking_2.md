@@ -4,9 +4,9 @@
 
 Demonstrate an understanding of basic C++ programming concepts by completing the following:
 
-- Program: Create a simple C++ console application that will write a program that will take two string inputs from a user. Your program should concatenate the two strings and then print the resulting output to the screen. Take the two string inputs from the user 3 times for varying string lengths.
+- Program: Create a simple [C++ console application](./CSC450_CT2_string.cpp) that will write a program that will take two string inputs from a user. Your program should concatenate the two strings and then print the resulting output to the screen. Take the two string inputs from the user 3 times for varying string lengths.
 
-Compile and submit your pseudocode, source code, and screenshots of the application executing the application, the results and your GIT repository in a single document.
+Compile and submit your pseudocode, [source code](./CSC450_CT2_string.cpp), and [screenshots](./img/CSC450_CT2_string.png) of the application executing the application, the results and your [GIT repository](https://github.com/speters33w/CSUGlobal_CSC450) in a single document.
 
 Reginald Haseltine
 Feb 2, 2024 Local: Feb 2 at 3:20pm
@@ -22,11 +22,11 @@ For your Module 2 Critical Thinking assignment you are to write a C++ program th
 
 **To receive full credit for the packaging requirements for your Critical Thinking and Portfolio assignments you must:**
 
-**1) Put your C++ source code in .cpp text files. Note that I execute all your programs to check them out.**
+**1) Put your C++ source code in [.cpp text files](./CSC450_CT2_string.cpp). Note that I execute all your programs to check them out.**
 
 **2) In a Word or PDF "documentation" file, labeled as such,** **put a copy of your C++ source code and execution output screen snapshots.**
 
-**3) Include a screenshot showing that you've stored your C++ source code in a GitHub repository.**
+**3) Include a [screenshot](./img/GitHub_Repository2.png) showing that you've stored your C++ source code in a GitHub repository.**
 
 **4) Put all your files into a single** **.zip file, and submit ONLY that .zip file for grading.**
 
