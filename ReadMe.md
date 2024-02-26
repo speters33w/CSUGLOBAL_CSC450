@@ -8,3 +8,5 @@ This repository contains my solutions while taking CSC450 Programming III (Secur
 
 [Critical Thinking 2](./CriticalThinking2/critical_thinking_2.md) String Input Console Application
 
+[Critical Thinking 3](./CriticalThinking3/critical_thinking_3.md) Integer Pointers Program
+
