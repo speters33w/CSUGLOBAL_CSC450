@@ -30,8 +30,8 @@ For the Module 3 CT assignment you are to develop a C++ program that allocates d
 
 **1) Your [C++ source code](./CSC450_CT3_integer_pointers.cpp) in .cpp text files. Note that I execute all your programs to check them out**
 
-**2) A Word or PDF "documentation" file, labeled as such,** **put a copy of your C++ source code and execution output screen snapshots**
+**2) A Word or PDF ["documentation" file](./doc/Critical_Thinking_3_Integer_Pointers_Program.pdf), labeled as such,** **put a copy of your C++ source code and execution output screen snapshots**
 
-**3) A screenshot showing that you've stored your C++ source code in a GitHub repository (can be combined with #2)**
+**3) A [screenshot](./img/GitHub_Repository3.png) showing that you've stored your C++ source code in a GitHub repository (can be combined with #2)**
 
-**4) All your files into a single** **.zip file, and submit ONLY the .zip file for grading**
+**4) All your files into a single** **.[zip file](./zip/CriticalThinking3.zip), and submit ONLY the .zip file for grading**
