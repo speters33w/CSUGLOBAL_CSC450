@@ -109,6 +109,6 @@ int get_integer() {
     const int INTEGER_ARRAY[3] = {integer_1, integer_2, integer_3};
     for (int integer: INTEGER_ARRAY) {
         counter++;
-        printf("Integer %d: %-11d, Pointer %d: %p\n", counter, integer, counter, &integer);
+        printf("Integer %d: %-11d Pointer %d: %p\n", counter, integer, counter, &integer);
     }
 } // Variables are freed from memory here.
