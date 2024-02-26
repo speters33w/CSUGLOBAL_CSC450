@@ -28,21 +28,19 @@ int main() {
  */
 void show_pointers() {
     int integer_1 = get_integer(), integer_2 = get_integer(), integer_3 = get_integer();
-    void *pointer_1 = malloc(sizeof(integer_1)),
-         *pointer_2 = malloc(sizeof(integer_2)),
-         *pointer_3 = malloc(sizeof(integer_3));
+    int  *pointer_1 = new int(integer_1);
+    void *pointer_2 = malloc(sizeof(integer_2));
+    int  *pointer_3 = &integer_3;
     printf("Integer 1: %-11d Integer 1 Pointer: %p\n"
            "Integer 2: %-11d Integer 2 Pointer: %p\n"
            "Integer 3: %-11d Integer 3 Pointer: %p\n",
            integer_1, pointer_1, integer_2, pointer_2, integer_3, pointer_3);
-    free(pointer_3);
+    delete pointer_1;
     free(pointer_2);
-    free(pointer_1);
-    /* Note: free() only deallocates the memory and frees it for usage by another thread.
+    pointer_3 = NULL;
+    /* Note: these methods only deallocate the memory and free it for usage by another thread.
      * The value remains in memory until overwritten.
-     * free() may only be used if the pointer is created with malloc().
-     * Using delete on a pointer can result in undefined behavior and is not recommended.
-     * Setting a pointer to NULL will also free the memory.
+     * To wipe the memory, use  memset(pointer, 0, sizeof(*pointer)).
      */
 } // Variables are freed from memory here.
 
