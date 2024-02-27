@@ -37,8 +37,8 @@ void show_pointers() {
            integer_1, pointer_1, integer_2, pointer_2, integer_3, pointer_3);
     delete pointer_1;
     free(pointer_2);
-    pointer_3 = NULL;
-    /* Note: these methods only deallocate the memory and free it for usage by another thread.
+    pointer_3 = nullptr;
+    /* Note: these methods only deallocate the memory and frees the pointer.
      * The value remains in memory until overwritten.
      * To wipe the memory, use  memset(pointer, 0, sizeof(*pointer)).
      */
@@ -81,32 +81,33 @@ int get_integer() {
 
 /*
  * This function will ask the user to enter an integer using the get_integer() function three times.
- * It will print the values and a memory pointer to each integer.
- * The pointers are not stored in a variable and are freed at the function termination.
- * If they were stored and returned, delete or free() could be used to deallocate the storage in memory
+ * It will print the values and a memory reference to each integer.
+ * The references are not stored in a pointer and are freed at the function termination.
+ * If pointers were created and values stored and returned,
+ * delete or free() could be used to dereference the storage in memory
  * depending on the way the pointer was created.
  */
-[[maybe_unused]] void alternate_solution() {
+[[maybe_unused]] void show_references() {
     int integer_1 = get_integer(), integer_2 = get_integer(), integer_3 = get_integer();
-    printf("Integer 1: %-11d Integer 1 Pointer: %p\n"
-           "Integer 2: %-11d Integer 2 Pointer: %p\n"
-           "Integer 3: %-11d Integer 3 Pointer: %p\n",
+    printf("Integer 1: %-11d Integer 1 Reference: %p\n"
+           "Integer 2: %-11d Integer 2 Reference: %p\n"
+           "Integer 3: %-11d Integer 3 Reference: %p\n",
            integer_1, &integer_1, integer_2, &integer_2, integer_3, &integer_3);
 } // Variables are freed from memory here.
 
 /*
- * The loop in this function defeats the purpose of the assignment,
- * as the pointer will always be to the local integer variable within the for each loop.
- * It will print the same pointer address to the screen three times because at each iteration
+ * The loop in this function did not satisfy the purpose of the assignment,
+ * as the reference will always be to the local integer variable within the for each loop.
+ * It will print the same reference address to the screen three times because at each iteration
  * the local integer variable is destroyed and overwritten.
- * It does not provide the pointer address for integer_1, integer_2, or integer_3.
+ * It does not provide the reference address for integer_1, integer_2, or integer_3.
  * It is unused and left here for demonstration.
  */
-[[maybe_unused]] void integer_pointers_loop() {
+[[maybe_unused]] void integer_reference_loop() {
     int counter = 0, integer_1 = get_integer(), integer_2 = get_integer(), integer_3 = get_integer();
     const int INTEGER_ARRAY[3] = {integer_1, integer_2, integer_3};
     for (int integer: INTEGER_ARRAY) {
         counter++;
-        printf("Integer %d: %-11d Pointer %d: %p\n", counter, integer, counter, &integer);
+        printf("Integer %d: %-11d Reference %d: %p\n", counter, integer, counter, &integer);
     }
 } // Variables are freed from memory here.
