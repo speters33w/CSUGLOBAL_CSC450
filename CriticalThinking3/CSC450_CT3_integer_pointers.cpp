@@ -38,6 +38,7 @@ void show_pointers() {
     delete pointer_1;
     free(pointer_2);
     pointer_3 = nullptr;
+    delete pointer_3;
     /* Note: these methods only deallocate the memory and frees the pointer.
      * The value remains in memory until overwritten.
      * To wipe the memory, use  memset(pointer, 0, sizeof(*pointer)).

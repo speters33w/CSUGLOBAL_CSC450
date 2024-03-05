@@ -1,5 +1,5 @@
 /*
- * A simple C++ program that demonstrates accessing memory beyond scope.
+ * A simple C++ program that demonstrates accessing out of bounds memory.
  * Modified from
  * C++ POINTERS (2020) - How to use pointers and arrays (for beginners)
  * https://www.youtube.com/watch?v=DsS-ZiYOWy4
@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int luckyNumbers() {
 
     // Create the array and pointer.
     int luckyNumbers[5];
@@ -32,8 +32,8 @@ int main() {
                     "but incorrectly access a memory location not in the array." << endl;
     for (int i = 0; i <= 5; i++){
         if (i == 5){
-            cout << "This value is from the memory space at " <<
-            pointer << " + 0x" << hex << sizeof pointer/2 * (i) << endl;
+            cout << "This value (hex) is from the memory space at " <<
+            pointer << " + 0x" << hex << sizeof(int) * (i) << endl;
         }
         cout << "Value: " << *(luckyNumbers + i) << endl;
         cout << "Pointer reference: " << pointer + i << endl;

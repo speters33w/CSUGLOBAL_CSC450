@@ -3,4 +3,4 @@ project(LuckyNumbers)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(LuckyNumbers LuckyNumbers.cpp)
+add_executable(LuckyNumbers LuckyNumbers.cpp arrayPointers.cpp arrayPointers.cpp)
