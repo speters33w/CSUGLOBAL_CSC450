@@ -7,7 +7,7 @@ using namespace fmt;
 
 int get_integer(const std::string& input);
 
-int main() {
+int fmtExample() {
     int fortyTwo = get_integer("42");
     print(fg(color::crimson) | emphasis::bold,
           "The answer to life, {0}{1}!\n",
