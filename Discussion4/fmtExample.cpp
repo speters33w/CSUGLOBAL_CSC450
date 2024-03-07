@@ -7,7 +7,7 @@ using namespace fmt;
 
 int get_integer(const std::string& input);
 
-int fmtExample() {
+int main() {
     int fortyTwo = get_integer("42");
     print(fg(color::crimson) | emphasis::bold,
           "The answer to life, {0}{1}!\n",
@@ -24,7 +24,5 @@ int fmtExample() {
 }
 
 int get_integer(const std::string& input) {
-    int integer;
-    integer = stoi(regex_replace(input, std::regex(R"([^\-0-9.]+)"), ""));
-    return integer;
+    return stoi(regex_replace(input, std::regex(R"([^\-0-9.]+)"), ""));
 }

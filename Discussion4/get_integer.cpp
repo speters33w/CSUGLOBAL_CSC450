@@ -6,7 +6,7 @@ int get_integer();
 
 using namespace std;
 
-int main() {
+int main2() {
     int integer_1 = get_integer(), integer_2 = get_integer(), integer_3 = get_integer();
     fprintf(stdout, "Integer 1 = %d, Integer 2 = %d, Integer 3 = %d.",
             integer_1, integer_2, integer_3);
