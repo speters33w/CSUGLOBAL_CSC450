@@ -3,4 +3,4 @@ project(Discussion4)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Discussion4 fmtExample.cpp get_integer.cpp)
+add_executable(Discussion4 fmtExample.cpp get_integer.cpp student_examples.cpp validate_integer.cpp)

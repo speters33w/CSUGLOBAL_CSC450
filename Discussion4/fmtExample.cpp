@@ -1,3 +1,6 @@
+// fmtExample.cpp
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCUnusedMacroInspection"
 #define FMT_HEADER_ONLY
 
 #include <regex>
@@ -7,7 +10,7 @@ using namespace fmt;
 
 int get_integer(const std::string& input);
 
-int main() {
+int fmtExample_main() {
     int fortyTwo = get_integer("42");
     print(fg(color::crimson) | emphasis::bold,
           "The answer to life, {0}{1}!\n",
@@ -26,3 +29,5 @@ int main() {
 int get_integer(const std::string& input) {
     return stoi(regex_replace(input, std::regex(R"([^\-0-9.]+)"), ""));
 }
+
+#pragma clang diagnostic pop
