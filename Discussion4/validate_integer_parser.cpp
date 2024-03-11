@@ -76,9 +76,8 @@ void test(std::ostream& log, bool const expect, std::string s)
             << ", OP : " << OP_validate_integer(s) << '\n';
     }
 }
-int validate_integer_parser_main()
-{
-    auto& log{ std::cout };
+int validate_integer_parser_main() {
+    auto &log{std::cout};
     log << std::left;
 
     test(log, true, "<2112>");
@@ -95,4 +94,4 @@ int validate_integer_parser_main()
     test(log, true, "-+42");
     test(log, true, "- 42");
     log.put('\n');
-    
+}
