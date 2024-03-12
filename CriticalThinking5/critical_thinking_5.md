@@ -4,12 +4,12 @@
 
 Demonstrate an understanding of C++ programming concepts by completing the following:
 
-1. Program: Create a C++ program that will obtain input from a user and store it into the provided [CSC450_CT5_mod5.txt](./CSC450_CT5_mod5.txt) file
+1. Program: Create a [C++ program](./CSC450_CT5_append_reverse.cpp) that will obtain input from a user and store it into the provided [CSC450_CT5_mod5.txt](./CSC450_CT5_mod5.txt) file
 2. Download [CSC450_CT5_mod5.txt](./CSC450_CT5_mod5.txt) file. Your program should append it to the provided text file, without deleting the existing data: 
    1. Store the provided data in the CSC450_CT5_mod5.txt file.
    2. Create a reversal method that will reverse all of the characters in the CSC450_CT5_mod5.txt file and store the result in a CSC450-mod5-reverse.txt file.
 
-Compile and submit your pseudocode, source code, and screenshots of the application executing the application, the results and your GIT repository in a single document.
+Compile and submit your pseudocode, [source code](./CSC450_CT5_append_reverse.cpp), and [screenshots](./img/CSC450_CT5_append_reverse.png) of the application executing the application, the results and your [GIT repository](./img/GitHub_Repository5.png) in a single document.
 
 Reginald Haseltine     
 
@@ -31,10 +31,10 @@ Please do not include a pathname for your local computer to your files since thi
 
 **To receive full credit for the packaging requirements for your Critical Thinking and Portfolio assignments you must:**
 
-**1) Put your C++ source code in .cpp text files. Note that I execute all your programs to check them out.**
+**1) Put your [C++ source code](./CSC450_CT5_append_reverse.cpp) in .cpp text files. Note that I execute all your programs to check them out.**
 
-**2) In a Word or PDF "documentation" file, labeled as such,** **put a copy of your C++ source code and execution output screen snapshots.**
+**2) In a Word or [PDF "documentation" file](./doc/Critical_Thinking_5_User_Input_Program.pdf), labeled as such,** **put a copy of your C++ source code and execution output screen snapshots.**
 
-**3) Include a screenshot showing that you've stored your C++ source code in a GitHub repository.**
+**3) Include a [screenshot](./img/GitHub_Repository5.png) showing that you've stored your C++ source code in a GitHub repository.**
 
-**4) Put all your files into a single** **.zip file, and submit ONLY that .zip file for grading.**
+**4) Put all your files into a single** **.[zip file](./zip/CriticalThinking5.zip), and submit ONLY that .zip file for grading.**

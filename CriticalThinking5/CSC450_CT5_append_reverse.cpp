@@ -38,7 +38,7 @@ int main() {
             "Contents of %s successfully reversed and stored in %s. \n",
             fileName.c_str(),
             reverseFileName.c_str());
-//    string reverseFileContents = read_file(filePath, reverseFileName);
+//    string reverseFileContents = read_file(directoryPath + reverseFileName);
 //    cout << reverseFileContents << endl;
     return 0;
 }
