@@ -58,10 +58,10 @@ inline bool exists_file(const string &filePath) {
  * Reads contents of a text file and returns the entire contents as a string.
  */
 string read_file(const string &filePath) {
-    ifstream t(filePath);
+    ifstream fileContents(filePath);
     stringstream buffer;
-    buffer << t.rdbuf();
-    t.close();
+    buffer << fileContents.rdbuf();
+    fileContents.close();
     string returnString = buffer.str();
     buffer.clear();
     return returnString;
