@@ -26,7 +26,7 @@ void reverse_string_to_file(string stringToReverse, const string &filePath);
  * This is the main runner engine for the program.
  */
 int main() {
-    string directoryPath = "../"; // This relative path works with my IDE. Modify it if necessary.
+    string directoryPath = "../"; // Change the directory path here if necessary. I use "../" for my IDE.
     string fileName = "CSC450_CT5_mod5.txt";
     string reverseFileName = "CSC450-mod5-reverse.txt";
     append_string(directoryPath + fileName);
@@ -48,8 +48,10 @@ int main() {
  * Checks to see if a file exists.
  */
 inline bool exists_file(const string &filePath) {
-    ifstream f(filePath.c_str());
-    return f.good();
+    ifstream fileExistStream(filePath.c_str());
+    bool good = fileExistStream.good();
+    fileExistStream.close();
+    return good;
 }
 
 /*
@@ -59,7 +61,10 @@ string read_file(const string &filePath) {
     ifstream t(filePath);
     stringstream buffer;
     buffer << t.rdbuf();
-    return buffer.str();
+    t.close();
+    string returnString = buffer.str();
+    buffer.clear();
+    return returnString;
 }
 
 /*

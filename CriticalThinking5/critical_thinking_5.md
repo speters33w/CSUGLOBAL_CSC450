@@ -11,23 +11,23 @@ Demonstrate an understanding of C++ programming concepts by completing the follo
 
 Compile and submit your pseudocode, source code, and screenshots of the application executing the application, the results and your GIT repository in a single document.
 
-Reginald Haseltine         
+Reginald Haseltine     
 
-Feb 2, 2024  Local: Feb 2 at 3:22pm<br>Course: Feb 2 at 1:22pm
+Feb 2, 2024 Local: Feb 2 at 3:22pm<br>Course: Feb 2 at 1:22pm
 
 Module 5 Introduction
 
 In this module we're taking a look at concurrency, specifically where there are multiple threads of execution within a single program.
 
-With multiple threads, it is important to synchronize them to achieve the correct results, for example when the threads are accessing a  common variable.
+With multiple threads, it is important to synchronize them to achieve the correct results, for example when the threads are accessing a common variable.
 
-One of the common problems that can occur with concurrent programs is a race condition where multiple threads are trying to access a shared  resource simultaneously and possible change its value.
+One of the common problems that can occur with concurrent programs is a race condition where multiple threads are trying to access a shared resource simultaneously and possible change its value.
 
-We'll be investigating how race conditions can be avoided by using a  mutex and locks, as well as other thread management techniques.
+We'll be investigating how race conditions can be avoided by using a mutex and locks, as well as other thread management techniques.
 
-In this week's CT assignment you'll be appending text to the end of  an existing file, reversing the text, and then storing the reversed text into another file.
+In this week's CT assignment you'll be appending text to the end of an existing file, reversing the text, and then storing the reversed text into another file.
 
-Please do not include a pathname for your local computer to your  files since this means it will need to be removed to check your code.  Just include the appropriate file names. 
+Please do not include a pathname for your local computer to your files since this means it will need to be removed to check your code. Just include the appropriate file names. 
 
 **To receive full credit for the packaging requirements for your Critical Thinking and Portfolio assignments you must:**
 
