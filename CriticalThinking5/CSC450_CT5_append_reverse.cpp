@@ -7,51 +7,56 @@
  * (CSC450_CT5_append_reverse.cpp)
  */
 #include <algorithm>
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <sstream>
 
 using namespace std;
 
-inline bool exists_file(const string &name);
+inline bool exists_file(const string &filePath);
 
-string read_file(const string &filePath, const string &fileName);
+string read_file(const string &filePath);
 
-void append_string(const string &filePath, const string &fileName);
+void append_string(const string &filePath);
 
-void reverse_string_to_file(string stringToReverse, const string &filePath, const string &reverseFileName);
+void reverse_string_to_file(string stringToReverse, const string &filePath);
 
 /*
  * This is the main runner engine for the program.
  */
 int main() {
-    string filePath = "../"; // This relative path works with my IDE. Modify it if necessary.
+    string directoryPath = "../"; // This relative path works with my IDE. Modify it if necessary.
     string fileName = "CSC450_CT5_mod5.txt";
     string reverseFileName = "CSC450-mod5-reverse.txt";
-    append_string(filePath, fileName);
-    cout << "Data appended successfully" << endl;
-    string fileContents = read_file(filePath, fileName);
+    append_string(directoryPath + fileName);
+    fprintf(stdout,"Data appended to %s successfully. \n", fileName.c_str());
+    string fileContents = read_file(directoryPath + fileName);
 //    cout << fileContents << endl;
-    reverse_string_to_file(fileContents, filePath, reverseFileName);
+    reverse_string_to_file(fileContents, directoryPath + reverseFileName);
+    fprintf(stdout,
+            "Contents of %s successfully reversed and stored in %s. \n",
+            fileName.c_str(),
+            reverseFileName.c_str());
 //    string reverseFileContents = read_file(filePath, reverseFileName);
 //    cout << reverseFileContents << endl;
     return 0;
 }
 
+
 /*
  * Checks to see if a file exists.
  */
-inline bool exists_file(const string &name) {
-    ifstream f(name.c_str());
+inline bool exists_file(const string &filePath) {
+    ifstream f(filePath.c_str());
     return f.good();
 }
 
 /*
  * Reads contents of a text file and returns the entire contents as a string.
  */
-string read_file(const string &filePath, const string &fileName) {
-    ifstream t(filePath + fileName);
+string read_file(const string &filePath) {
+    ifstream t(filePath);
     stringstream buffer;
     buffer << t.rdbuf();
     return buffer.str();
@@ -62,15 +67,15 @@ string read_file(const string &filePath, const string &fileName) {
  * Allows multiple lines.
  * The user indicates the input is complete by typing q.
  */
-void append_string(const string &filePath, const string &fileName) {
+void append_string(const string &filePath) {
     bool done = false;
     string userString;
     ofstream fileStream;
-    if (!exists_file(filePath + fileName)) {
-        fprintf(stdout, "Could not open file for editing: %s%s.", filePath.c_str(), fileName.c_str());
-        throw std::ios_base::failure("Could not open file for editing: " + filePath + fileName);
+    if (!exists_file(filePath)) {
+        fprintf(stdout, "Could not open file for editing: %s.", filePath.c_str());
+        throw std::ios_base::failure("Could not open file for editing: " + filePath);
     }
-    fileStream.open(filePath + fileName, ios::out | ios::app);
+    fileStream.open(filePath, ios::out | ios::app);
     cout << "Enter the data to append. Enter q to finish entry: " << endl;
     while (!done) {
         getline(cin, userString);
@@ -87,10 +92,10 @@ void append_string(const string &filePath, const string &fileName) {
  * Reverses a string and saves it to a file.
  * The string may include line breaks.
  */
-void reverse_string_to_file(string stringToReverse, const string &filePath, const string &reverseFileName) {
+void reverse_string_to_file(string stringToReverse, const string &filePath) {
     ofstream fileStream;
     reverse(stringToReverse.begin(), stringToReverse.end());
-    fileStream.open(filePath + reverseFileName);
+    fileStream.open(filePath);
     fileStream << stringToReverse;
     fileStream.close();
 }
