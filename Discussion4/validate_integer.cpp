@@ -82,6 +82,9 @@ void run_tests() {
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "cppcoreguidelines-narrowing-conversions"
 int validate_integer(const string& input) {
+    // force out of range exception if integer will be out of range
+    string oorCheck = "0" + input;  // so .2112 will be valid
+    stoi(regex_replace(oorCheck, regex(R"([^0-9.-]+)"), ""));
     if(regex_match(input, regex(".*([,]+[0-9]{3})+.*"))){
         return round(stof(regex_replace(input, regex(R"([^0-9.-]+)"), "")));
     }
@@ -91,9 +94,6 @@ int validate_integer(const string& input) {
        ) {
             throw std::invalid_argument("invalid input: " + input + " \n");
     }
-    // force out of range exception if integer will be out of range
-    string oorCheck = "0" + input;
-    int out_of_bounds = stoi(regex_replace(oorCheck, regex(R"([^0-9.-]+)"), ""));
     return round(stof(regex_replace(input, regex(R"([^0-9.-]+)"), "")));
 }
 #pragma clang diagnostic pop
