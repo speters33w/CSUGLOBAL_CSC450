@@ -11,3 +11,5 @@ This repository contains my solutions while taking CSC450 Programming III (Secur
 [Critical Thinking 3](./CriticalThinking3/critical_thinking_3.md) Integer Pointers Program
 
 [Critical Thinking 5](./CriticalThinking5/critical_thinking_5.md) User Input Program (File Manipulation)
+
+[Portfolio Project Milestone](./PortfolioProjectMilestone/portfolio_project_milestone.md) Concurrency Concepts - C++

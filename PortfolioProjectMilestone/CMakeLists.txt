@@ -3,4 +3,4 @@ project(PortfolioProjectC)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(PortfolioProjectC Count.cpp)
+add_executable(PortfolioProjectMilestone Count.cpp)
