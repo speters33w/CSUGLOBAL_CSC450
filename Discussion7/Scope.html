@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Stephan Peters">
+	<META NAME="CREATED" CONTENT="20240326;11211055">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+
+<pre><font color="#0033b3">public class </font><font color="#000000">Scope </font>{
+   <font color="#0033b3">public static void </font><font color="#00627a">main</font>(<font color="#000000">String</font>[] args) {
+       <font color="#000000">ScopeExample scopeExample </font>= <font color="#0033b3">new </font>ScopeExample(<font color="#1750eb">1</font>);
+       <font color="#6e260e">// The following line will nor work because the variable n is private:
+       // System.out.println(scopeExample.n);
+       // The following line will work because the method printN() is private:
+       // scopeExample.printN();</font>
+       <font color="#0033b3">int </font><font color="#000000">newN </font>= <font color="#000000">scopeExample</font>.incrementN();
+       <font color="#000000">System</font>.<font color="#871094">out</font>.printf(<font color="#067d17">&quot;The value of newN is: %d&quot;</font>, <font color="#000000">newN</font>);
+   }
+}
+</pre>
+
+</BODY>
+</HTML>

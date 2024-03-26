@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Stephan Peters">
+	<META NAME="CREATED" CONTENT="20240326;11142588">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+
+<pre><font color="#0033b3">public class </font><font color="#000000">ScopeExample </font>{
+   <font color="#6e260e">// Private variable accessible only within the class</font>
+<font color="#6e260e">   </font><font color="#0033b3">private int </font><font color="#871094">n</font>;
+
+   <font color="#0033b3">public </font><font color="#00627a">ScopeExample</font>(<font color="#0033b3">int </font>number) {
+       <font color="#0033b3">this</font>.<font color="#871094">n </font>= number;
+   }
+
+   <font color="#6e260e">// Private method accessible only within the class</font>
+<font color="#6e260e">   </font><font color="#0033b3">private void </font><font color="#00627a">printN</font>() {
+       <font color="#000000">System</font>.<font color="#871094">out</font>.printf(<font color="#067d17">&quot;The value of this ScopeExample.n is: %d</font><font color="#0037a6">\n</font><font color="#067d17">&quot;</font>, <font color="#0033b3">this</font>.<font color="#871094">n</font>);
+   }
+
+   <font color="#6e260e">// Public method accessible from outside the class</font>
+<font color="#6e260e">   </font><font color="#0033b3">public int </font><font color="#00627a">incrementN</font>() {
+       <font color="#0033b3">this</font>.<font color="#871094">n</font>++;
+       printN();
+       <font color="#0033b3">return this</font>.<font color="#871094">n</font>;
+   }
+}
+</pre>
+
+</BODY>
+</HTML>
