@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7cfb6e1-b981-44df-9bb3-37ae1387e41f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Discussion6/Discussion6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Discussion6/src/JavaFinder/JavaFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Discussion6/src/JavaFinder/WinRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Discussion6/src/VulnerableLog4jExampleHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/PortfolioProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/TwentyTwenty.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2dbaGSaqzdhbE73XSemXw74CiGm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OneDrive/GCC/CSC450/Discussion5/AtomicVariables.cpp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="C/C++ File.AtomicVariables">
+    <configuration name="AtomicVariables" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Discussion5" TARGET_NAME="AtomicVariables.cpp" CONFIG_NAME="AtomicVariables">
+      <option name="sourceFile" value="C:\OneDrive\GCC\CSC450\Discussion5\AtomicVariables.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7cfb6e1-b981-44df-9bb3-37ae1387e41f" name="Changes" comment="" />
+      <created>1710279135682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710279135682</updated>
+      <workItem from="1710279136809" duration="115000" />
+      <workItem from="1710279289732" duration="2731000" />
+      <workItem from="1710375254546" duration="1313000" />
+      <workItem from="1710376591792" duration="104000" />
+      <workItem from="1710376930073" duration="2956000" />
+      <workItem from="1710719345311" duration="151000" />
+      <workItem from="1710719509184" duration="3779000" />
+      <workItem from="1710784492092" duration="1022000" />
+      <workItem from="1710875789440" duration="72000" />
+      <workItem from="1711310653627" duration="4000" />
+      <workItem from="1711327750747" duration="36000" />
+      <workItem from="1711405203515" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
