@@ -5,7 +5,7 @@ using namespace std;
 
 mutex mtx;
 static void staticCountUp(int min, int max, int increment){
-    for(int i = min; i <= max; i += increment){
+    for(int i = min; i <= max; i += abs(increment)){
         lock_guard<std::mutex> lock(mtx);
         cout << i << " ";
     }
@@ -13,7 +13,7 @@ static void staticCountUp(int min, int max, int increment){
 }
 
 static void staticCountDown(int min, int max, int increment) {
-    for(int i = max; i >= min; i -= increment){
+    for(int i = max; i >= min; i -= abs(increment)){
         lock_guard<std::mutex> lock(mtx);
         cout << i << " ";
     }

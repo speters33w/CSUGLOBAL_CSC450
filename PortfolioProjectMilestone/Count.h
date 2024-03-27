@@ -13,7 +13,7 @@ class Count {
 public:
     // Constructs the object and initializes the variables
     explicit Count(int min = 1, int max = 20, int increment = 1)
-            : min_(min), max_(max), increment_(increment) {}
+            : min_(min), max_(max), increment_(abs(increment)) {}
 
     // Initiates countUp() with wait false as a default.
     void countUp() {
