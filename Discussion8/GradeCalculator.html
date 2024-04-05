@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Stephan Peters">
+	<META NAME="CREATED" CONTENT="20240401;10232581">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+
+<pre><font color="#0033b3">import </font><font color="#000000">java.nio.charset.StandardCharsets</font>; 
+<font color="#0033b3">import </font><font color="#000000">java.util.Scanner</font>; 
+ 
+<font color="#0033b3">public class </font><font color="#000000">GradeCalculator </font>{ 
+ 
+<font color="#0033b3">   private final double </font><font color="#871094">maxGrade</font>; 
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Creates a new GradeCalculator object. </font>
+<font color="#e97451">    * @param </font><font color="#3d3d3d">maxGrade </font><font color="#e97451">the maximum grade in the scale, e.g., 4.0 or 100. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">public </font><font color="#00627a">GradeCalculator</font>(<font color="#0033b3">double </font>maxGrade) { 
+<font color="#0033b3">       this</font>.<font color="#871094">maxGrade </font>= maxGrade; 
+<font color="#000000">   } </font>
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Gets the grades[] array from the user and calculates the final grade. </font>
+<font color="#e97451">    * This method also demonstrates scope minimization by accessing private methods. </font>
+<font color="#e97451">    * </font>
+<font color="#e97451">    * @return The final grade. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">public double </font><font color="#00627a">gradeCalculator</font>() { 
+<font color="#0033b3">       int </font><font color="#000000">numberOfSubjects </font>= subjectsEntryForStudent(); 
+<font color="#0033b3">       double</font>[] <font color="#000000">grades </font>= gradesEntryForStudents(<font color="#000000">numberOfSubjects</font>); 
+<font color="#0033b3">       return </font>calculateFinalGrade(<font color="#000000">grades</font>); 
+<font color="#000000">   } </font>
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Gets the number of subjects the student has from the user. </font>
+<font color="#e97451">    * Catches NumberFormatException for non-integer values. </font>
+<font color="#e97451">    * @return the number of subjects the student has. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">private int </font><font color="#00627a">subjectsEntryForStudent</font>() { 
+<font color="#000000">       Scanner in </font>= <font color="#0033b3">new </font>Scanner(<font color="#000000">System</font>.<font color="#871094">in</font>, <font color="#000000">StandardCharsets</font>.<font color="#871094">UTF_8</font>); 
+<font color="#0033b3">       int </font><font color="#000000">numberOfSubjects </font>= <font color="#1750eb">0</font>; 
+<font color="#000000">       System</font>.<font color="#871094">out</font>.println(<font color="#067d17">&quot;Enter the number of subjects for the student: &quot;</font>); 
+<font color="#0033b3">       boolean </font><font color="#000000">valid </font>= <font color="#0033b3">false</font>; <font color="#e97451">// Used to break out of the while loop. </font>
+<font color="#e97451">       </font><font color="#0033b3">do </font>{ 
+<font color="#0033b3">           try </font>{ 
+<font color="#e97451">               // Validate the input, force integer value to absolute value. </font>
+<font color="#e97451">               </font><font color="#000000">numberOfSubjects </font>= <font color="#000000">Math</font>.abs(<font color="#000000">Integer</font>.parseInt(<font color="#000000">in</font>.nextLine())); 
+<font color="#000000">               valid </font>= <font color="#0033b3">true</font>; 
+<font color="#000000">           } </font><font color="#0033b3">catch </font>(<font color="#000000">NumberFormatException </font>nfe) { 
+<font color="#e97451">               // If the input is not an integer, restart the loop. </font>
+<font color="#000000">               System</font>.<font color="#871094">out</font>.println(<font color="#067d17">&quot;Invalid input. </font><font color="#0037a6">\n</font><font color="#067d17"> Please Enter the number of subjects: &quot;</font>); 
+<font color="#000000">           } </font>
+<font color="#000000">       } </font><font color="#0033b3">while </font>(!<font color="#000000">valid</font>); 
+<font color="#0033b3">       return </font><font color="#000000">numberOfSubjects</font>; 
+<font color="#000000">   } </font>
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Gets the grades[] array from the user. </font>
+<font color="#e97451">    * </font>
+<font color="#e97451">    * @param </font><font color="#3d3d3d">numberOfSubjects </font><font color="#e97451">The number of subjects the student has. </font>
+<font color="#e97451">    * @return The grades[] array from the user. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">private double</font>[] <font color="#00627a">gradesEntryForStudents</font>(<font color="#0033b3">int </font>numberOfSubjects) { 
+<font color="#000000">       Scanner in </font>= <font color="#0033b3">new </font>Scanner(<font color="#000000">System</font>.<font color="#871094">in</font>, <font color="#000000">StandardCharsets</font>.<font color="#871094">UTF_8</font>); 
+<font color="#0033b3">       double</font>[] <font color="#000000">grades </font>= <font color="#0033b3">new double</font>[numberOfSubjects]; 
+<font color="#000000">       System</font>.<font color="#871094">out</font>.println(); 
+<font color="#0033b3">       for </font>(<font color="#0033b3">int </font><font color="#000000">i </font>= <font color="#1750eb">0</font>; <font color="#000000">i </font>&lt; <font color="#000000">grades</font>.<font color="#871094">length</font>; <font color="#000000">i</font>++) { 
+<font color="#000000">           System</font>.<font color="#871094">out</font>.printf(<font color="#067d17">&quot;Please enter grade #%d for this student: &quot;</font>, <font color="#000000">i </font>+ <font color="#1750eb">1</font>); 
+<font color="#0033b3">           double </font><font color="#000000">grade </font>= <font color="#000000">in</font>.nextDouble(); 
+<font color="#000000">           grades</font>[<font color="#000000">i</font>] = <font color="#000000">grade</font>; 
+<font color="#000000">       } </font>
+<font color="#000000">       in</font>.close(); 
+<font color="#0033b3">       return </font><font color="#000000">grades</font>; 
+<font color="#000000">   } </font>
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Calculates the final grade. </font>
+<font color="#e97451">    * Catches an ArrayIndexOutOfBoundsException if the grades[] array is empty. </font>
+<font color="#e97451">    * Throws an IllegalArgumentException if the final grade is invalid. </font>
+<font color="#e97451">    * </font>
+<font color="#e97451">    * @param </font><font color="#3d3d3d">grades </font><font color="#e97451">The grades[] array from the user. </font>
+<font color="#e97451">    * @return The final grade. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">private double </font><font color="#00627a">calculateFinalGrade</font>(<font color="#0033b3">double</font>[] grades) { 
+<font color="#0033b3">       int </font><font color="#000000">smallestIndex </font>= <font color="#1750eb">0</font>; 
+<font color="#0033b3">       double </font><font color="#000000">firstGrade </font>= <font color="#1750eb">0.0</font>; 
+<font color="#0033b3">       try </font>{ 
+<font color="#000000">           firstGrade </font>= grades[<font color="#1750eb">0</font>]; 
+<font color="#000000">       } </font><font color="#0033b3">catch </font>(<font color="#000000">ArrayIndexOutOfBoundsException </font>ioob) { 
+<font color="#000000">           System</font>.<font color="#871094">out</font>.println(<font color="#067d17">&quot;Minimum one subject required.&quot;</font>); 
+<font color="#000000">       } </font>
+<font color="#0033b3">       if </font>(grades.<font color="#871094">length </font>== <font color="#1750eb">1</font>) { 
+<font color="#0033b3">           return </font>grades[<font color="#1750eb">0</font>]; 
+<font color="#000000">       } </font>
+<font color="#0033b3">       for </font>(<font color="#0033b3">int </font><font color="#000000">i </font>= <font color="#1750eb">0</font>; <font color="#000000">i </font>&lt;= grades.<font color="#871094">length</font>; <font color="#000000">i</font>++) { 
+<font color="#000000">               smallestIndex </font>= <font color="#000000">i</font>; 
+<font color="#000000">       } </font>
+<font color="#e97451">       // Note: This is only to demonstrate the try-catch block with firstGrade. </font>
+<font color="#e97451">       </font><font color="#e97451">// Normally the sum would = 0.0 and int i would = 0. </font>
+<font color="#e97451">       </font><font color="#0033b3">double </font><font color="#000000">sum </font>= <font color="#000000">firstGrade</font>; 
+<font color="#0033b3">       for </font>(<font color="#0033b3">int </font><font color="#000000">i </font>= <font color="#1750eb">1</font>; <font color="#000000">i </font>&lt; grades.<font color="#871094">length</font>; <font color="#000000">i</font>++) { 
+<font color="#0033b3">           if </font>(<font color="#000000">i </font>!= <font color="#000000">smallestIndex</font>) { 
+<font color="#000000">               sum </font>= <font color="#000000">sum </font>+ grades[<font color="#000000">i</font>]; 
+<font color="#000000">           } </font>
+<font color="#000000">       } </font>
+<font color="#0033b3">       double </font><font color="#000000">finalGrade </font>= <font color="#000000">sum </font>/ (grades.<font color="#871094">length</font>); 
+<font color="#0033b3">       if </font>(<font color="#000000">finalGrade </font>&lt;= <font color="#1750eb">0 </font>|| <font color="#000000">finalGrade </font>&gt; <font color="#871094">maxGrade</font>) { 
+<font color="#0033b3">           throw new </font>IllegalArgumentException(<font color="#067d17">&quot;Invalid final grade: &quot; </font>+ <font color="#000000">finalGrade</font>); 
+<font color="#000000">       } </font> 
+<font color="#0033b3">       return </font><font color="#000000">finalGrade</font>; 
+<font color="#000000">   } </font>
+ 
+<font color="#e97451">   /** </font>
+<font color="#e97451">    * Main driver method. </font>
+<font color="#e97451">    */ </font>
+<font color="#e97451">   </font><font color="#0033b3">public static void </font><font color="#00627a">main</font>(<font color="#000000">String</font>[] args) { 
+<font color="#000000">       GradeCalculator gradeCalculator </font>= <font color="#0033b3">new </font>GradeCalculator(<font color="#1750eb">4.0</font>); 
+<font color="#0033b3">       double </font><font color="#000000">finalGrade </font>= <font color="#000000">gradeCalculator</font>.gradeCalculator(); 
+<font color="#000000">       System</font>.<font color="#871094">out</font>.printf(<font color="#067d17">&quot;The final grade is: %.2f%n&quot;</font>, <font color="#000000">finalGrade</font>); 
+<font color="#000000">   } </font>
+<font color="#000000">} </font>
+</pre>
+
+</BODY>
+</HTML>

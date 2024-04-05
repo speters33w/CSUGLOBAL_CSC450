@@ -10,10 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7cfb6e1-b981-44df-9bb3-37ae1387e41f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Discussion6/Discussion6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Discussion6/src/JavaFinder/JavaFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Discussion6/src/JavaFinder/WinRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Discussion6/src/VulnerableLog4jExampleHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/$PROJECT_FILE$" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/checkstyle-idea.xml" afterDir="false" />
@@ -25,6 +21,11 @@
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/PortfolioProject.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/Count.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/TwentyTwenty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortfolioProjectMilestone/.idea/PortfolioProjectC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortfolioProjectMilestone/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortfolioProjectMilestone/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortfolioProjectMilestone/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortfolioProjectMilestone/Count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../PortfolioProjectMilestone/Count.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +105,7 @@
       <workItem from="1711310653627" duration="4000" />
       <workItem from="1711327750747" duration="36000" />
       <workItem from="1711405203515" duration="43000" />
+      <workItem from="1711476385229" duration="34000" />
     </task>
     <servers />
   </component>
