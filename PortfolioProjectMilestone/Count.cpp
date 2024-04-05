@@ -6,10 +6,29 @@
  * and a static method using static functions.
  * (Count.cpp)
  */
+#include <iostream>
+#include <mutex>
 #include "Count.h"
-#include "StaticCount.h"
 
 using namespace std;
+
+mutex mtx;
+// This is a ststic class that counts up. It includes a lock_guard.
+static void staticCountUp(int min, int max, int increment){
+    for(int i = min; i <= max; i += abs(increment)){
+        lock_guard<std::mutex> lock(mtx);
+        cout << i << " ";
+    }
+    cout << endl;
+}
+// This is a ststic class that counts down. It includes a lock_guard.
+static void staticCountDown(int min, int max, int increment) {
+    for(int i = max; i >= min; i -= abs(increment)){
+        lock_guard<std::mutex> lock(mtx);
+        cout << i << " ";
+    }
+    cout << endl;
+}
 
 // This is a worker function that allows the threads to use non-static functions.
 auto worker(int min, int max, signed int increment, bool descending, bool wait) {
@@ -50,7 +69,7 @@ auto worker(int min, int max, signed int increment, bool descending, bool wait) 
 // using non-static and static methods.
 int main() {
     // Initialize the minimum, maximum, and increment.
-    int min = 1, max = 20, increment = 1;
+    int min = 0, max = 20, increment = 1;
 
     // Using a non-static object through a worker function.
     cout << "This demonstrates using a non-static class object for the threads." << endl;
