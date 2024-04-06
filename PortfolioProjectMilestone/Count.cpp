@@ -98,8 +98,8 @@ int main() {
     // Display benchmark data:
     duration<double, std::milli> nonstatic_duration = c2 - c1;
     duration<double, std::milli> static_duration = c4 - c3;
-    fprintf(stdout, "\nDuration using the non-static method: %.4f ms", nonstatic_duration.count());
-    fprintf(stdout, "\nDuration using the static method: %.4f ms", static_duration.count());
+    fprintf(stdout, "\nDuration using the non-static method: %.3f ms", nonstatic_duration.count());
+    fprintf(stdout, "\nDuration using the static method: %.3f ms", static_duration.count());
 
     return 0;
 }

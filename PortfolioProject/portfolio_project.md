@@ -2,7 +2,7 @@
 
 ### Concurrency Concepts
 
-For your Portfolio Project, you will demonstrate an understanding of the various concepts discussed in each module. For the second part of your Portfolio Project, you will create a Java application that will exhibit concurrency concepts. Your application should create two threads that will act as counters. One thread should count up to 20. Once thread one reaches 20, then a second thread should be used to count down to 0. For your created code, please provide a detailed analysis of appropriate concepts that could impact your application. Specifically, please address:
+For your Portfolio Project, you will demonstrate an understanding of the various concepts discussed in each module. For the second part of your Portfolio Project, you will create a Java application that will exhibit concurrency concepts. Your [application](./TwentyTwenty.java) should create two threads that will act as counters. One thread should count up to 20. Once thread one reaches 20, then a second thread should be used to count down to 0. For your created code, please provide a [detailed analysis](./doc/detailed_analysis.pdf) of appropriate concepts that could impact your application. Specifically, please address:
 
 - Performance issues with concurrency
 - Vulnerabilities exhibited with use of strings
@@ -10,8 +10,8 @@ For your Portfolio Project, you will demonstrate an understanding of the various
 
 Submit the following components to your GIT repository in a single document:
 
-- Word document with appropriate screenshots of your program executing, program analysis responses, and source code in the Word file.
-- Submit your .java source code file(s). If more than 1 file, submit a zip file.
+- [Word document](./doc/documentation.pdf) with appropriate screenshots of your program executing, program analysis responses, and source code in the Word file.
+- Submit your [.java source code file(s)](./src/). If more than 1 file, submit a zip file.
 - Provide a detailed comparison between the performance implementations between the Java and C++ versions of your applications. Which implementation may be considered less vulnerable to security threats and why? Your detailed comparison should be 3-4 pages in length. 
 
 Reginald Haseltine   
@@ -33,13 +33,13 @@ For this week's programming assignment you have a final program to create for th
 
 **To receive full credit for the packaging requirements for your Module 8 Portfolio Project assignment you must:**
 
-**1) Put your Java source code in .java text files. Note that I execute all your programs to check them out.**
+**1) Put your [Java source code](./src/) in .java text files. Note that I execute all your programs to check them out.**
 
-**2) In a Word or PDF "documentation" file, labeled as such,** **put a copy of your Java source code and execution output screen snapshots.**
+**2) In a Word or [PDF "documentation" file](./doc/documentation.pdf), labeled as such, put a copy of your Java source code and execution output screen snapshots.**
 
-**3) Include a screenshot showing that you've stored your Java source code in a GitHub repository.**
+**3) Include a [screenshot](./img/GitHubRepository8.png) showing that you've stored your Java source code in a GitHub repository.**
 
-**4) Include a detailed analysis paper in APA Edition 7 format of the important concepts of concurrency with Java to cover in detail performance issues, string vulnerabilities, and security of data types. Here's a link to the school's Writing Center where you can find the relevant APA Edition 7 requirements you need to follow -> [https://csuglobal.libguides.com/writingcenterLinks to an external site.](https://csuglobal.libguides.com/writingcenter)**
+**4) Include a [detailed analysis](./doc/detailed_analysis.pdf) paper in APA Edition 7 format of the important concepts of concurrency with Java to cover in detail performance issues, string vulnerabilities, and security of data types.**
 
 **5) Include a separate 3-4 page APA Edition 7 paper comparing the performance and security differences between C++ and Java multi-threaded programs.** 
 

@@ -20,27 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0281010-6eee-4f25-9b3c-2729ba027623" name="Changes" comment="More work on Portfolio Project Milestone">
-      <change afterPath="$PROJECT_DIR$/../Discussion7/src/ScopeMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Discussion8/src/GradeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/$PROJECT_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/PortfolioProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PortfolioProject/src/TwentyTwenty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Count.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/GithubRepository7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Discussion5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Discussion5/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b0281010-6eee-4f25-9b3c-2729ba027623" name="Changes" comment="Work on Discussions 7 and 8">
+      <change beforePath="$PROJECT_DIR$/../PortfolioProject/portfolio_project.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PortfolioProject/portfolio_project.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Count.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StaticCount.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_project_milestone.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_project_milestone.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +88,9 @@
       <workItem from="1711493133788" duration="4734000" />
       <workItem from="1711500433629" duration="181000" />
       <workItem from="1711570957424" duration="49000" />
-      <workItem from="1712327173442" duration="48000" />
+      <workItem from="1712327173442" duration="859000" />
+      <workItem from="1712329193438" duration="920000" />
+      <workItem from="1712360367402" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="More work on Portfolio Project Milestone">
       <created>1711499558722</created>
@@ -113,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711499558722</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final edits to Portfolio Project Milestone">
+      <created>1712327321910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712327321910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Work on Discussions 7 and 8">
+      <created>1712327417944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712327417944</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="More work on Portfolio Project Milestone" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work on Portfolio Project Milestone" />
+    <MESSAGE value="Final edits to Portfolio Project Milestone" />
+    <MESSAGE value="Work on Discussions 7 and 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on Discussions 7 and 8" />
   </component>
 </project>
