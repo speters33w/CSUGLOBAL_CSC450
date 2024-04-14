@@ -21,10 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0281010-6eee-4f25-9b3c-2729ba027623" name="Changes" comment="Work on Discussions 7 and 8">
-      <change beforePath="$PROJECT_DIR$/../PortfolioProject/portfolio_project.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PortfolioProject/portfolio_project.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Count.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,8 @@
       <workItem from="1711570957424" duration="49000" />
       <workItem from="1712327173442" duration="859000" />
       <workItem from="1712329193438" duration="920000" />
-      <workItem from="1712360367402" duration="657000" />
+      <workItem from="1712360367402" duration="1857000" />
+      <workItem from="1713115885160" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="More work on Portfolio Project Milestone">
       <created>1711499558722</created>

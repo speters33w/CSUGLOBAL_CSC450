@@ -12,7 +12,7 @@ Submit the following components to your GIT repository in a single document:
 
 - [Word document](./doc/documentation.pdf) with appropriate screenshots of your program executing, program analysis responses, and source code in the Word file.
 - Submit your [.java source code file(s)](./src/). If more than 1 file, submit a zip file.
-- Provide a detailed comparison between the performance implementations between the Java and C++ versions of your applications. Which implementation may be considered less vulnerable to security threats and why? Your detailed comparison should be 3-4 pages in length. 
+- Provide a [detailed comparison](./doc/detailed_comparison.pdf) between the performance implementations between the Java and C++ versions of your applications. Which implementation may be considered less vulnerable to security threats and why? Your detailed comparison should be 3-4 pages in length. 
 
 Reginald Haseltine   
 
@@ -41,7 +41,7 @@ For this week's programming assignment you have a final program to create for th
 
 **4) Include a [detailed analysis](./doc/detailed_analysis.pdf) paper in APA Edition 7 format of the important concepts of concurrency with Java to cover in detail performance issues, string vulnerabilities, and security of data types.**
 
-**5) Include a separate 3-4 page APA Edition 7 paper comparing the performance and security differences between C++ and Java multi-threaded programs.** 
+**5) Include a separate [3-4 page APA Edition 7 paper](./doc/detailed_comparison.pdf) comparing the performance and security differences between C++ and Java multi-threaded programs.** 
 
 **6) Put all your files into a single** **.zip file, and submit ONLY that .zip file for grading.**
 
